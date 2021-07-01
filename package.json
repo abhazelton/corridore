@@ -1,0 +1,49 @@
+{
+  "name": "corridore",
+  "version": "0.0.1",
+  "description": "Simple promise-based runner for tasks with chained api for abstracting varied processes into single actions",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"INFO: no test specified\" && exit 0",
+    "build": "rm -rf ./dist && tsc -p tsconfig.json",
+    "pre": "yarn run test && yarn run build",
+    "patch": "yarn run pre && yarn version patch && git push",
+    "minor": "yarn run pre && yarn version minor && git push",
+    "major": "yarn run pre && yarn version major && git push",
+    "publish": "yarn publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhazelton/corridore.git"
+  },
+  "keywords": [
+    "automation",
+    "runner",
+    "promise",
+    "async",
+    "batch",
+    "api"
+  ],
+  "author": {
+    "name": "Aaron Hazelton",
+    "email": "abhazelton@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhazelton/corridore/issues"
+  },
+  "homepage": "https://github.com/abhazelton/corridore#readme",
+  "dependencies": {
+    "events": "^3.3.0",
+    "p-map": "4.0.0",
+    "p-reduce": "2.1.0",
+    "p-settle": "4.1.1",
+    "pify": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/events": "^3.0.0",
+    "@types/node": "^15.12.5",
+    "@types/pify": "5.0.0"
+  },
+  "engines": {"node": "^12.20.0 || ^14.13.1 || >=16.0.0"}
+}

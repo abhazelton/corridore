@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "declaration": true,
+    "module": "commonjs"
+  },
+  "exclude": ["example/**"]
+}

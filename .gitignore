@@ -1,0 +1,12 @@
+node_modules
+.vscode/
+
+dist/
+
+.DS_Store
+
+# dotenv environment variables file
+.env
+.env.local
+.env.stage
+.env.prod

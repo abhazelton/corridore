@@ -1,0 +1,7 @@
+src/
+node_modules/
+.eslintignore
+.eslintrc.js
+.gitignore
+tsconfig.json
+yarn.lock
