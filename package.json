@@ -1,6 +1,6 @@
 {
   "name": "corridore",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Simple promise-based runner for tasks with chained api for abstracting varied processes into single actions",
   "main": "./dist/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "patch": "yarn run pre && yarn version patch && git push",
     "minor": "yarn run pre && yarn version minor && git push",
     "major": "yarn run pre && yarn version major && git push",
-    "publish": "yarn publish"
+    "pub": "yarn run pre && yarn publish"
   },
   "repository": {
     "type": "git",
@@ -45,5 +45,7 @@
     "@types/node": "^15.12.5",
     "@types/pify": "5.0.0"
   },
-  "engines": {"node": "^12.20.0 || ^14.13.1 || >=16.0.0"}
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  }
 }
