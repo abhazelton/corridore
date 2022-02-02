@@ -7,9 +7,9 @@
     "test": "echo \"INFO: no test specified\" && exit 0",
     "build": "rm -rf ./dist && tsc -p tsconfig.json",
     "pre": "yarn run test && yarn run build",
-    "patch": "yarn run pre && yarn version patch && git push",
-    "minor": "yarn run pre && yarn version minor && git push",
-    "major": "yarn run pre && yarn version major && git push",
+    "patch": "yarn run pre && npm version patch",
+    "minor": "yarn run pre && npm version minor",
+    "major": "yarn run pre && npm version major",
     "pub": "yarn run pre && yarn publish"
   },
   "repository": {
