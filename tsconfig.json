@@ -6,5 +6,6 @@
     "declaration": true,
     "module": "commonjs"
   },
+  "include": ["src/**/*.ts"],
   "exclude": ["example/**"]
 }
