@@ -1,6 +1,6 @@
 {
   "name": "corridore",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple promise-based runner for tasks with chained api for abstracting varied processes into single actions",
   "main": "./dist/index.js",
   "scripts": {
